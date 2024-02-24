@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <script src="https://unpkg.com/sweetalert2@11.10.5/dist/sweetalert2.all.js"></script>
 
 
     <title>Encriptar Texto</title>
 </head>
 <body>
+    
     <main>
+        <img src="imagenes/Logo.png" id="logo">
         <div class="parte1">
             <div>
                 <textarea class="texto" cols="30" rows="10" id="texto" placeholder="Ingresa el texto a encriptar"></textarea>
@@ -24,8 +27,8 @@
             </div>
 
             <div class="botones">
-                <button class="bontonEncriptar" type="button" onclick="encriptar()">Encriptar</button>
-                <button class="bontonDesencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                <button class="bontonEncriptar" type="button" onclick="encriptar()">Encriptar !</button>
+                <button class="bontonDesencriptar" type="button" onclick="desencriptar()">Desencriptar !</button>
             </div>
     
         </div>
@@ -35,9 +38,10 @@
             <div class="mensajeEncriptado" id="mensajeEncriptado">
                 <h2 id="tituloMensaje">Ningún Mensaje encontrado</h2>
                 <p id="parrafoEncriptado">Ingresa el texto que desees encriptar o desencriptar.</p>
-            
-            <textarea mane="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                <button class="copiar" type="copiar" id="copiar" onclick="copiar()" hidden>Copiar</button>
+               
             </div>
+            <div> <textarea mane="mensaje" id="mensaje" cols="30" rows="10" hidden readonly></textarea></div>
         </div>
     </main>
 </body>

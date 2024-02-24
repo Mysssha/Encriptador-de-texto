@@ -18,6 +18,7 @@ main{
     font-size: 32px;
     line-height: 150%;
     background-color: #f3f5fc;
+    resize: none;
 }
 
 .texto::placeholder{
@@ -148,10 +149,56 @@ main{
 }
 
 #imagenencriptado {
-    position: inherit;
+
     width: 80%;
     height: 50%;
-    top:15%
+    top:15%;
+    
+}
+
+#mensaje{
+
+    border: none;
+    padding: 10%;
+    height: 40%;
+    width: 80%;
+    font-size: 22px;
+    font-family: "inter";
+    font-weight: 700;
+    resize: none;
+    background-color: #ffffff;
+    
+} 
+#mensaje:focus, #mensaje:active{
+
+    outline: none;
+} 
+#logo {
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.copiar {
+        gap: 8px;
+        padding: 4%;
+        width: 70%;
+        background: #cecfd6;
+        border: 1px solid#0a3871;
+        border-radius: 24px;
+        font-weight: 400;
+        font-family: "Inter";
+        font-size: 18px;
+        line-height: 19px;
+        text-align: center;
+        color: #0a3871;
+        border-width: 2px;
+    
+}
+
+.copiar:hover {
+    margin: 0.3%;
+    width: 68%;
+    padding: 3.7%;
+
 }
 
 /* dispositivos mobiles */
@@ -166,14 +213,14 @@ main{
     }
     .texto {
       width: 80%;
-      height: 60%;
+      height: 50%;
       left: 10%;
-      top: 5%;
+      top: 10%;
     }
     .restricciones {
       width: 80%;
       left: 10%;
-      top: 67%;
+      top: 65%;
     }
     .restricciones p {
       font-size: 16px;
@@ -181,7 +228,7 @@ main{
     .botones {
       width: 80%;
       left: 10%;
-      top: 70%;
+      top: 60%;
     }
     .bontonEncriptar,
     .bontonDesencriptar {
@@ -196,17 +243,27 @@ main{
     }
     .textoEncriptado {
       width: 80%;
-      height: 15%;
+      height: 25%;
       left: 10%;
-      top: 80%;
+      top: 70%;
     }
     .mensajeEncriptado {
       width: 100%;
-      top: 5%;
+      top: 35%;
     }
     #imagenencriptado{
       top: 0;
       display: none;
       visibility: hidden;
+    }
+    #tituloMensaje{
+      visibility: hidden;
+    }
+    #mensaje{
+      height: 25%;
+    }
+
+    #copiar{
+      top:100%;
     }
   }
